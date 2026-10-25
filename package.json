@@ -7,11 +7,22 @@
     "proxy": "pnpm dlx local-ssl-proxy --source 3001 --target 3000 --cert ./fanvue-curator.dev.pem --key ./fanvue-curator.dev-key.pem",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:reset": "prisma migrate reset --force",
+    "test": "vitest"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@fanvue/builder-sdk": "^0.10.0",
+    "@fanvue/ui": "^3.43.0",
+    "@prisma/client": "^6.19.3",
     "next": "16.2.1",
+    "openai": "^7.43.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "zod": "^4.1.7"
@@ -21,10 +32,14 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/ui": "^5.0.5",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "prisma": "^6.19.3",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.5"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

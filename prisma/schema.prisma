@@ -1,0 +1,110 @@
+// Shelf data model
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Creator {
+  id              String      @id @default(cuid())
+  fanvueUserUuid  String      @unique @map("fanvue_user_uuid")
+  handle          String      @unique
+  displayName     String      @map("display_name")
+  voiceNotes      String?     @map("voice_notes") // JSON string with creator voice/style guidelines
+  createdAt       DateTime    @default(now()) @map("created_at")
+  
+  shelfItems      ShelfItem[]
+  fans            Fan[]
+  
+  @@map("creator")
+}
+
+model ShelfItem {
+  id           String   @id @default(cuid())
+  creatorId    String   @map("creator_id")
+  type         String   // song, playlist, film, book, article, place, quote, other
+  source       String   // link, quote
+  url          String?
+  quoteText    String?  @map("quote_text")
+  title        String
+  imageUrl     String?  @map("image_url")
+  description  String?
+  embedHtml    String?  @map("embed_html")
+  tags         String?  // JSON array string
+  creatorNote  String   @map("creator_note")
+  embedding    String?  // JSON array string for vector similarity
+  createdAt    DateTime @default(now()) @map("created_at")
+  
+  creator      Creator  @relation(fields: [creatorId], references: [id], onDelete: Cascade)
+  picks        Pick[]
+  
+  @@index([creatorId])
+  @@index([type])
+  @@map("shelf_item")
+}
+
+model Fan {
+  id              String         @id @default(cuid())
+  creatorId       String         @map("creator_id")
+  fanvueUserUuid  String         @unique @map("fanvue_user_uuid")
+  displayName     String         @map("display_name")
+  createdAt       DateTime       @default(now()) @map("created_at")
+  
+  creator         Creator        @relation(fields: [creatorId], references: [id], onDelete: Cascade)
+  messages        Message[]
+  tasteProfile    TasteProfile?
+  picks           Pick[]
+  
+  @@index([creatorId])
+  @@map("fan")
+}
+
+model Message {
+  id                 String   @id @default(cuid())
+  fanId              String   @map("fan_id")
+  fanvueMessageUuid  String?  @unique @map("fanvue_message_uuid")
+  sender             String   // creator, fan
+  text               String
+  sentAt             DateTime @map("sent_at")
+  
+  fan                Fan      @relation(fields: [fanId], references: [id], onDelete: Cascade)
+  
+  @@index([fanId])
+  @@index([sentAt])
+  @@map("message")
+}
+
+model TasteProfile {
+  fanId         String   @id @map("fan_id")
+  summary       String   // LLM-generated profile summary
+  liked         String?  // JSON array string
+  wantsNext     String?  @map("wants_next") // JSON array string
+  wantedTypes   String?  @map("wanted_types") // JSON array string
+  avoid         String?  // JSON array string
+  embedding     String?  // JSON array string for vector similarity
+  updatedAt     DateTime @updatedAt @map("updated_at")
+  
+  fan           Fan      @relation(fields: [fanId], references: [id], onDelete: Cascade)
+  
+  @@map("taste_profile")
+}
+
+model Pick {
+  id          String   @id @default(cuid())
+  fanId       String   @map("fan_id")
+  shelfItemId String   @map("shelf_item_id")
+  reason      String
+  score       Float
+  status      String   @default("suggested") // suggested, shown, opened
+  createdAt   DateTime @default(now()) @map("created_at")
+  
+  fan         Fan       @relation(fields: [fanId], references: [id], onDelete: Cascade)
+  shelfItem   ShelfItem @relation(fields: [shelfItemId], references: [id], onDelete: Cascade)
+  
+  @@index([fanId])
+  @@index([status])
+  @@map("pick")
+}
