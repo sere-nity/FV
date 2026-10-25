@@ -22,7 +22,7 @@ export type FanvueUser = {
 // which would otherwise break `next build` while collecting route data.
 let config: EmbeddedAppConfig | null = null;
 export function getConfig() {
-  config ?== createConfig();
+  config ??= createConfig();
   return config;
 }
 

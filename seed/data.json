@@ -1,0 +1,579 @@
+{
+  "creator": {
+    "fanvueUserUuid": "maya-uuid-001",
+    "handle": "maya",
+    "displayName": "Maya",
+    "voiceNotes": "{\"style\": \"warm, personal, thoughtful\", \"tone\": \"honest and direct without being preachy\", \"avoid\": \"generic recommendations or forcing positivity\"}"
+  },
+  "shelfItems": [
+    {
+      "type": "song",
+      "source": "link",
+      "url": "https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUc9Lp",
+      "title": "Falling - Harry Styles",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a9ec1b6fd39ca04ad3dd6dd5",
+      "description": "A vulnerable ballad from Fine Line",
+      "tags": "[\"quiet\", \"piano\", \"vulnerable\", \"late-night\"]",
+      "creatorNote": "The piano version gets me every time. Perfect for when you need to sit with your feelings instead of running from them."
+    },
+    {
+      "type": "song",
+      "source": "link",
+      "url": "https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h",
+      "title": "Motion Sickness - Phoebe Bridgers",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738c8d560c6b5b1b7d35ec48c1",
+      "description": "Indie folk from Stranger in the Alps",
+      "tags": "[\"breakup\", \"indie\", \"cathartic\", \"raw\"]",
+      "creatorNote": "This got me through my first real heartbreak. 'I have emotional motion sickness' — sometimes you just need someone to name exactly how you feel."
+    },
+    {
+      "type": "song",
+      "source": "link",
+      "url": "https://open.spotify.com/track/5odlY52u43F5BjByhxg7wg",
+      "title": "First Day of My Life - Bright Eyes",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d4c5f80e51cde083148eb95b",
+      "description": "Folk song from I'm Wide Awake, It's Morning",
+      "tags": "[\"hopeful\", \"acoustic\", \"simple\", \"honest\"]",
+      "creatorNote": "Conor's voice cracks and it's perfect. This is what hope sounds like when you've been down for a while."
+    },
+    {
+      "type": "song",
+      "source": "link",
+      "url": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI",
+      "title": "Amado Mio - Pink Martini",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b0a9dd2ad4c6f82e6c6e6c6b",
+      "description": "Latin jazz standard",
+      "tags": "[\"latin\", \"sultry\", \"vintage\", \"romance\"]",
+      "creatorNote": "Pure romance in a song. I play this when I'm cooking dinner and want to feel like I'm in a film."
+    },
+    {
+      "type": "playlist",
+      "source": "link",
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO",
+      "title": "Peaceful Piano",
+      "imageUrl": "https://i.scdn.co/image/ab67706f00000002f4f6e1f8d3b3f3e5e5e5e5e5",
+      "description": "Spotify's official peaceful piano playlist",
+      "tags": "[\"instrumental\", \"focus\", \"calm\", \"piano\"]",
+      "creatorNote": "This is my writing playlist. No lyrics to distract you, just beautiful piano that keeps you in flow."
+    },
+    {
+      "type": "playlist",
+      "source": "link",
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DWZqd5JICZI0u",
+      "title": "sad girl starter pack",
+      "imageUrl": "https://i.scdn.co/image/ab67706f00000002a0f5e5e5e5e5e5e5e5e5e5e5",
+      "description": "For when you need to feel your feelings",
+      "tags": "[\"sad\", \"indie\", \"cathartic\", \"feelings\"]",
+      "creatorNote": "Not actually just for sad girls — for anyone who needs to cry it out. Sometimes that's exactly what you need."
+    },
+    {
+      "type": "film",
+      "source": "link",
+      "url": "https://www.imdb.com/title/tt0405159/",
+      "title": "Million Dollar Baby",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTkxNzA1NDQxOV5BMl5BanBnXkFtZTcwNTkyMTIzMw@@._V1_.jpg",
+      "description": "2004 drama directed by Clint Eastwood",
+      "tags": "[\"drama\", \"emotional\", \"boxing\", \"relationships\"]",
+      "creatorNote": "This wrecked me. It's about boxing but it's really about found family and the choices we make for the people we love. Bring tissues."
+    },
+    {
+      "type": "film",
+      "source": "link",
+      "url": "https://www.imdb.com/title/tt0405094/",
+      "title": "The Lives of Others",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNmQyNmJjM2ItNTQzYi00ZjMxLWFjMDYtZjUyN2YwZDk5YWQ2XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
+      "description": "2006 German drama about surveillance in East Berlin",
+      "tags": "[\"foreign\", \"political\", \"moving\", \"thought-provoking\"]",
+      "creatorNote": "One of the most beautiful films about empathy I've ever seen. Shows how art can change someone, even in the darkest times."
+    },
+    {
+      "type": "film",
+      "source": "link",
+      "url": "https://www.imdb.com/title/tt0113277/",
+      "title": "Heat",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDMzNDZjNTEtMmM1NS00YWViLWE3YzQtNzk3MTJjNWVhMDQ5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "description": "1995 crime drama with Pacino and De Niro",
+      "tags": "[\"thriller\", \"la\", \"craft\", \"iconic\"]",
+      "creatorNote": "That coffee shop scene changed how I think about character scenes. Two people talking shouldn't be this tense, but it is."
+    },
+    {
+      "type": "book",
+      "source": "link",
+      "url": "https://www.goodreads.com/book/show/77203.The_War_of_Art",
+      "title": "The War of Art - Steven Pressfield",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320553542i/77203.jpg",
+      "description": "A book about overcoming creative resistance",
+      "tags": "[\"creativity\", \"self-help\", \"writing\", \"motivation\"]",
+      "creatorNote": "Read this when you're avoiding your creative work. It's blunt and sometimes harsh, but it's the kick I needed to stop making excuses."
+    },
+    {
+      "type": "book",
+      "source": "link",
+      "url": "https://www.goodreads.com/book/show/7624.Giovanni_s_Room",
+      "title": "Giovanni's Room - James Baldwin",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388211126i/7624.jpg",
+      "description": "A novel about love and self-deception",
+      "tags": "[\"literary\", \"love\", \"identity\", \"classic\"]",
+      "creatorNote": "Baldwin writes about longing and regret in a way that feels timeless. Every sentence is perfect. Read it slowly."
+    },
+    {
+      "type": "book",
+      "source": "link",
+      "url": "https://www.goodreads.com/book/show/11250317-the-song-of-achilles",
+      "title": "The Song of Achilles - Madeline Miller",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1352189346i/11250317.jpg",
+      "description": "A retelling of the Iliad from Patroclus's perspective",
+      "tags": "[\"mythology\", \"romance\", \"historical\", \"beautiful\"]",
+      "creatorNote": "If you think you don't like Greek mythology, try this. It made me cry on the train. Just pure, devastating love."
+    },
+    {
+      "type": "book",
+      "source": "link",
+      "url": "https://www.goodreads.com/book/show/38315033-daisy-jones-the-six",
+      "title": "Daisy Jones & The Six - Taylor Jenkins Reid",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1531906178i/40597810.jpg",
+      "description": "A novel about a 1970s rock band told as an oral history",
+      "tags": "[\"music\", \"70s\", \"bands\", \"relationships\"]",
+      "creatorNote": "The oral history format makes it fly by. It's fiction but feels so real — captures what it's like to make art with people you love and hate."
+    },
+    {
+      "type": "article",
+      "source": "link",
+      "url": "https://www.newyorker.com/magazine/2012/01/30/structure",
+      "title": "Structure - The New Yorker",
+      "imageUrl": "https://media.newyorker.com/photos/590970f42179605b11ad9a7d/master/w_1600,c_limit/structure.jpg",
+      "description": "John McPhee on writing structure",
+      "tags": "[\"writing\", \"craft\", \"structure\", \"process\"]",
+      "creatorNote": "McPhee breaks down exactly how he structures his pieces. Transformed how I think about organizing my own writing. So practical."
+    },
+    {
+      "type": "article",
+      "source": "link",
+      "url": "https://www.theguardian.com/music/2020/jan/16/joni-mitchell-interview-blue-album",
+      "title": "Joni Mitchell on Blue - The Guardian",
+      "imageUrl": "https://i.guim.co.uk/img/media/b5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5/0_0_3000_1800/master/3000.jpg?width=1200&quality=85&auto=format&fit=max&s=abc",
+      "description": "Joni Mitchell reflects on her landmark album",
+      "tags": "[\"music\", \"songwriting\", \"vulnerability\", \"classic\"]",
+      "creatorNote": "She talks about writing from a place of total vulnerability. It's brave and it's why Blue still matters. Required reading for songwriters."
+    },
+    {
+      "type": "article",
+      "source": "link",
+      "url": "https://www.newyorker.com/culture/the-new-yorker-interview/phoebe-bridgers-is-not-your-sad-girl",
+      "title": "Phoebe Bridgers Is Not Your Sad Girl",
+      "imageUrl": "https://media.newyorker.com/photos/5f5e5e5e5e5e5e5e5e5e5e5e/master/w_1600,c_limit/bridgers.jpg",
+      "description": "New Yorker interview with Phoebe Bridgers",
+      "tags": "[\"music\", \"interview\", \"indie\", \"mental-health\"]",
+      "creatorNote": "She's hilarious and smart about the 'sad girl' label. Also talks about community in music — not as competition but as support."
+    },
+    {
+      "type": "place",
+      "source": "link",
+      "url": "https://www.timeout.com/lisbon/restaurants/time-out-market-lisboa",
+      "title": "Time Out Market Lisboa",
+      "imageUrl": "https://media.timeout.com/images/105239143/image.jpg",
+      "description": "Food hall in Cais do Sodré, Lisbon",
+      "tags": "[\"lisbon\", \"food\", \"market\", \"casual\"]",
+      "creatorNote": "Best place to eat in Lisbon if you want to try lots of things. Go for lunch, get the pastel de nata afterward, thank me later."
+    },
+    {
+      "type": "place",
+      "source": "link",
+      "url": "https://www.barbican.org.uk/",
+      "title": "Barbican Centre - London",
+      "imageUrl": "https://www.barbican.org.uk/sites/default/files/styles/large/public/2021-06/barbican-centre-exterior.jpg",
+      "description": "Arts and learning centre in the City of London",
+      "tags": "[\"london\", \"arts\", \"brutalist\", \"culture\"]",
+      "creatorNote": "The architecture is stunning and it's never pretentious. I go to the library to write and catch whatever's on in the cinema."
+    },
+    {
+      "type": "place",
+      "source": "link",
+      "url": "https://www.stanfords.co.uk/",
+      "title": "Stanfords Travel Bookshop - London",
+      "imageUrl": "https://www.stanfords.co.uk/static/images/shop-exterior.jpg",
+      "description": "The world's largest travel bookshop",
+      "tags": "[\"london\", \"books\", \"travel\", \"maps\"]",
+      "creatorNote": "I can lose hours here. Even if you're not planning a trip, it makes you want to go somewhere. The old maps section is magic."
+    },
+    {
+      "type": "place",
+      "source": "link",
+      "url": "https://www.visitportugal.com/en/node/421787",
+      "title": "Miradouro de Santa Catarina - Lisbon",
+      "imageUrl": "https://www.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/miradouro-santa-catarina.jpg",
+      "description": "Viewpoint in Bairro Alto overlooking the Tagus",
+      "tags": "[\"lisbon\", \"views\", \"sunset\", \"locals\"]",
+      "creatorNote": "Best sunset spot in Lisbon. Grab a beer from the kiosk, sit on the wall, and watch the light change. Locals still go, which says everything."
+    },
+    {
+      "type": "quote",
+      "source": "quote",
+      "quoteText": "You can't wait for inspiration. You have to go after it with a club.",
+      "title": "Jack London on Creativity",
+      "tags": "[\"creativity\", \"discipline\", \"motivation\", \"writing\"]",
+      "creatorNote": "I have this on my wall. Some days you don't feel like creating, and that's exactly when you need to show up anyway."
+    },
+    {
+      "type": "quote",
+      "source": "quote",
+      "quoteText": "The cure for anything is salt water: sweat, tears, or the sea.",
+      "title": "Isak Dinesen",
+      "tags": "[\"healing\", \"nature\", \"simple\", \"wisdom\"]",
+      "creatorNote": "When I'm stuck in my head, I remember this. Go for a run, let yourself cry, or find water. It always helps."
+    },
+    {
+      "type": "quote",
+      "source": "quote",
+      "quoteText": "We must be willing to let go of the life we planned so as to have the life that is waiting for us.",
+      "title": "Joseph Campbell",
+      "tags": "[\"change\", \"acceptance\", \"growth\", \"letting-go\"]",
+      "creatorNote": "I read this after a big breakup and it shifted something. Sometimes the best thing isn't what you thought you wanted."
+    },
+    {
+      "type": "quote",
+      "source": "quote",
+      "quoteText": "There is no greater agony than bearing an untold story inside you.",
+      "title": "Maya Angelou",
+      "tags": "[\"storytelling\", \"voice\", \"truth\", \"expression\"]",
+      "creatorNote": "This is why I write. Your story matters, even if it feels small. Especially if it feels small."
+    },
+    {
+      "type": "other",
+      "source": "link",
+      "url": "https://musictheoryforbeginners.com/",
+      "title": "Music Theory for Beginners",
+      "imageUrl": "https://musictheoryforbeginners.com/og-image.png",
+      "description": "Free online music theory course",
+      "tags": "[\"music\", \"education\", \"theory\", \"beginner\"]",
+      "creatorNote": "This taught me enough theory to write better melodies. You don't need to know everything, just enough to unlock new ideas."
+    },
+    {
+      "type": "other",
+      "source": "link",
+      "url": "https://www.brainpickings.org/",
+      "title": "The Marginalian (Brain Pickings)",
+      "imageUrl": "https://www.brainpickings.org/wp-content/uploads/2020/02/brainpickings_og.png",
+      "description": "Maria Popova's weekly newsletter on culture, art, and philosophy",
+      "tags": "[\"newsletter\", \"culture\", \"philosophy\", \"weekly\"]",
+      "creatorNote": "Maria finds connections between art, science, and life that I'd never see. Her weekly emails are long but worth it."
+    },
+    {
+      "type": "song",
+      "source": "link",
+      "url": "https://open.spotify.com/track/1301WleyT98MSxVHPZCA6M",
+      "title": "Lua - Bright Eyes",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d4c5f80e51cde083148eb95b",
+      "description": "Folk song from I'm Wide Awake, It's Morning",
+      "tags": "[\"melancholy\", \"acoustic\", \"storytelling\", \"raw\"]",
+      "creatorNote": "The live version from the Roisin Dubh is the one. It's messy and emotional and perfect for 2am feelings."
+    },
+    {
+      "type": "song",
+      "source": "link",
+      "url": "https://open.spotify.com/track/3CF4iV6s7ojGEJYP8hhVXm",
+      "title": "Que Sera Sera - Pink Martini",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b0a9dd2ad4c6f82e6c6e6c6b",
+      "description": "Vintage standard",
+      "tags": "[\"jazz\", \"vintage\", \"optimistic\", \"classic\"]",
+      "creatorNote": "My mom used to sing this. It's a good reminder when you're anxious about the future — whatever will be, will be."
+    },
+    {
+      "type": "film",
+      "source": "link",
+      "url": "https://www.imdb.com/title/tt0266543/",
+      "title": "Finding Nemo",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BZjMxYzExOWEtMGE5YS00OTczLTg5YTctMmIyY2U3NmU0MzE4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "description": "2003 Pixar animated film",
+      "tags": "[\"animation\", \"uplifting\", \"family\", \"heartwarming\"]",
+      "creatorNote": "Don't let anyone tell you it's just a kids' film. 'Just keep swimming' got me through some dark times. Cry every time."
+    },
+    {
+      "type": "book",
+      "source": "link",
+      "url": "https://www.goodreads.com/book/show/22318578-the-crossroads-of-should-and-must",
+      "title": "The Crossroads of Should and Must - Elle Luna",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1420583057i/22318578.jpg",
+      "description": "A short book about choosing your must",
+      "tags": "[\"creativity\", \"choice\", \"illustrated\", \"inspiring\"]",
+      "creatorNote": "You can read this in an hour and it'll make you think for weeks. Should is safe, must is scary. Pick must."
+    },
+    {
+      "type": "article",
+      "source": "link",
+      "url": "https://austinkleon.com/2022/08/24/how-to-read-more-2/",
+      "title": "How to Read More - Austin Kleon",
+      "imageUrl": "https://austinkleon.com/wp-content/uploads/2022/08/reading-tips.jpg",
+      "description": "Practical tips on reading more books",
+      "tags": "[\"reading\", \"habits\", \"practical\", \"simple\"]",
+      "creatorNote": "His advice is so simple it's almost annoying. Carry a book, quit books you don't like, read before bed. But it works."
+    }
+  ],
+  "fans": [
+    {
+      "fanvueUserUuid": "sam-uuid-001",
+      "displayName": "Sam",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "Hey! Just wanted to say your last track was beautiful. The quieter moments really got me.",
+          "sentAt": "2026-10-20T14:23:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Thank you so much Sam! Those quieter songs are actually my favorites from the album too 💙",
+          "sentAt": "2026-10-20T15:12:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "I've been listening to it on repeat when I need to just... think, you know? Really hits different late at night.",
+          "sentAt": "2026-10-21T01:45:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Do you have any other song recommendations? I love that vulnerable, stripped-back vibe.",
+          "sentAt": "2026-10-22T19:30:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "priya-uuid-001",
+      "displayName": "Priya",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "Hi Maya! I'm traveling to Lisbon next month and I remember you mentioned you love it there. Any recommendations?",
+          "sentAt": "2026-10-18T11:20:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Oh amazing! You're going to love it. Let me think about some spots for you.",
+          "sentAt": "2026-10-18T12:05:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Thanks!! I'm really into food and just wandering around, not so much touristy stuff.",
+          "sentAt": "2026-10-18T16:40:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Also if you know any good fado places? I've never heard it live.",
+          "sentAt": "2026-10-19T09:15:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "leo-uuid-001",
+      "displayName": "Leo",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "Your music has been helping me through a rough breakup. Thank you for being so honest in your songs.",
+          "sentAt": "2026-10-15T22:10:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "I'm so sorry you're going through that. Sending you lots of love 💛",
+          "sentAt": "2026-10-16T10:30:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "It's been hard. We were together for 3 years. I keep thinking about all the plans we made.",
+          "sentAt": "2026-10-17T20:45:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Sorry for being heavy. I just don't know who else to talk to about this stuff.",
+          "sentAt": "2026-10-17T21:02:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Don't apologize. Breakups are the worst. Be gentle with yourself okay? 💙",
+          "sentAt": "2026-10-18T09:20:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Thank you. That means a lot. Do you have any songs or anything that helped you when you went through this?",
+          "sentAt": "2026-10-19T13:25:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "jess-uuid-001",
+      "displayName": "Jess",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "I've been trying to write songs but I have no idea what I'm doing lol. How did you get started?",
+          "sentAt": "2026-10-16T15:40:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Honestly just by doing it badly for a long time! 😂 But it's the best feeling when something clicks.",
+          "sentAt": "2026-10-16T18:20:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "That's encouraging haha. I have all these feelings but no idea how to turn them into actual songs.",
+          "sentAt": "2026-10-17T10:15:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Did you learn music theory or just figure it out by ear?",
+          "sentAt": "2026-10-18T14:30:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Bit of both! I learned enough theory to unlock new ideas, but the feeling always comes first.",
+          "sentAt": "2026-10-18T17:45:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "alex-uuid-001",
+      "displayName": "Alex",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "Your newsletter this week about finding your voice hit so hard. I've been struggling with that in my own creative work.",
+          "sentAt": "2026-10-14T09:30:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Thank you for reading! It's such a journey, isn't it?",
+          "sentAt": "2026-10-14T11:45:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Yeah. I keep feeling like I need to sound like someone else to be taken seriously.",
+          "sentAt": "2026-10-15T19:20:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "But then I read your stuff and it's so YOU, you know? That's what makes it good.",
+          "sentAt": "2026-10-15T19:22:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "maya-uuid-002",
+      "displayName": "Maya K",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "Weird question but do you have any book recommendations? Your taste is immaculate.",
+          "sentAt": "2026-10-19T16:10:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Not weird at all! I love talking books. What kind of thing are you in the mood for?",
+          "sentAt": "2026-10-19T18:25:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Something beautiful but also heartbreaking? I'm in that kind of mood lately.",
+          "sentAt": "2026-10-20T10:40:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "taylor-uuid-001",
+      "displayName": "Taylor",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "That Phoebe Bridgers song you posted about changed my life. I can't stop listening to Motion Sickness.",
+          "sentAt": "2026-10-21T13:45:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "RIGHT?! That whole album is perfect.",
+          "sentAt": "2026-10-21T15:20:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Do you have more sad indie recs? I'm going through something and this is exactly what I need.",
+          "sentAt": "2026-10-22T11:30:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "chris-uuid-001",
+      "displayName": "Chris",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "Just discovered your music through a playlist. Obsessed. How long have you been making music?",
+          "sentAt": "2026-10-23T14:20:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Thank you! About 6 years seriously, but I've been writing since I was a teenager.",
+          "sentAt": "2026-10-23T16:10:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "That's so cool. Your lyrics feel really personal but also like they could be about anyone.",
+          "sentAt": "2026-10-23T19:45:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "emma-uuid-001",
+      "displayName": "Emma",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "I need something uplifting today. Everything feels heavy. Any recommendations?",
+          "sentAt": "2026-10-24T08:15:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "Sending you good vibes! Let me think what might help...",
+          "sentAt": "2026-10-24T10:30:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Thank you 💛 Just need something to remind me things will be okay.",
+          "sentAt": "2026-10-24T12:20:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "jordan-uuid-001",
+      "displayName": "Jordan",
+      "messages": [
+        {
+          "sender": "fan",
+          "text": "Your writing about creativity really resonates with me. Do you have any advice for staying consistent?",
+          "sentAt": "2026-10-17T11:00:00Z"
+        },
+        {
+          "sender": "creator",
+          "text": "It's so hard! I try to show up even when I don't feel inspired. Discipline over motivation.",
+          "sentAt": "2026-10-17T14:15:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "That makes sense. I always wait to feel inspired and then nothing happens lol.",
+          "sentAt": "2026-10-18T09:40:00Z"
+        },
+        {
+          "sender": "fan",
+          "text": "Do you have any resources that helped you with that mindset shift?",
+          "sentAt": "2026-10-18T09:42:00Z"
+        }
+      ]
+    },
+    {
+      "fanvueUserUuid": "riley-uuid-001",
+      "displayName": "Riley",
+      "messages": []
+    },
+    {
+      "fanvueUserUuid": "morgan-uuid-001",
+      "displayName": "Morgan",
+      "messages": []
+    }
+  ]
+}

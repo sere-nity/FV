@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "name": "Shelf",
+  "description": "Turn your taste into personal picks for each fan. Curate songs, films, books, articles, places and quotes, and Shelf matches them to fans using their chat history.",
+  "developer": {
+    "name": "Serene",
+    "url": "https://github.com/sere-nity/FV"
+  },
+  "access": {
+    "type": "embedded",
+    "url": "https://your-domain.com/creator",
+    "fanExperienceUrl": "https://your-domain.com/fan?token={{token}}"
+  },
+  "oauth": {
+    "redirectUris": [
+      "https://your-domain.com/api/oauth/callback"
+    ],
+    "scopes": [
+      "read:self",
+      "read:chat",
+      "write:chat",
+      "read:fan"
+    ]
+  },
+  "experience": {
+    "externalExperienceId": "shelf-main",
+    "displayName": "Shelf",
+    "description": "Personal picks chosen just for you",
+    "deliveryMode": "EMBEDDED",
+    "accessMode": "FREE"
+  }
+}
