@@ -1,6 +1,10 @@
-import { env } from "@/env";
-import { getSession, setSession } from "@/lib/session";
-import { refreshAccessToken } from "@/lib/oauth";
+import { verifySessionJwt } from "@fanvue/builder-sdk";
+import {
+  createConfig,
+  getAuthenticatedClient,
+  getSession,
+  type EmbeddedAppConfig,
+} from "@fanvue/builder-sdk/nextjs/embedded-app";
 
 export type FanvueUser = {
   uuid: string;
@@ -14,37 +18,44 @@ export type FanvueUser = {
   contentCounts?: { postCount?: number };
 };
 
-export async function getCurrentUser(): Promise<FanvueUser | null> {
-  let session = await getSession();
+// Resolved lazily: createConfig() throws when OAUTH_*/SESSION_SECRET are unset,
+// which would otherwise break `next build` while collecting route data.
+let config: EmbeddedAppConfig | null = null;
+export function getConfig() {
+  config ?== createConfig();
+  return config;
+}
+
+/**
+ * Verifies the Bearer session JWT (refreshing tokens when near expiry) and
+ * returns the creator's access token plus any re-signed JWT for X-Updated-Session.
+ */
+export async function getAccessToken() {
+  const cfg = getConfig();
+  const auth = await getAuthenticatedClient({ sessionSecret: cfg.sessionSecret, config: cfg });
+  if (!auth) return null;
+
+  const session = auth.refreshedJwt
+    ? await verifySessionJwt(cfg.sessionSecret, auth.refreshedJwt).then((r) =>
+        r.isOk() ? r.value : null,
+      )
+    : await getSession(cfg.sessionSecret);
   if (!session) return null;
 
-  if (Date.now() >= session.expiresAt - 30_000 && session.refreshToken) {
-    try {
-      const refreshed = await refreshAccessToken(session.refreshToken);
-      const updatedSession = {
-        accessToken: refreshed.access_token,
-        refreshToken: refreshed.refresh_token ?? session.refreshToken,
-        tokenType: refreshed.token_type,
-        scope: refreshed.scope ?? session.scope,
-        expiresAt: Date.now() + refreshed.expires_in * 1000,
-      };
-      await setSession(updatedSession);
-      session = updatedSession;
-    } catch {}
-  }
+  return { accessToken: session.accessToken, refreshedJwt: auth.refreshedJwt };
+}
 
-  try {
-    const res = await fetch(`${env.API_BASE_URL}/users/me`, {
-      headers: {
-        Authorization: `Bearer ${session.accessToken}`,
-        "X-Fanvue-API-Version": "2025-06-26",
-      },
-      cache: "no-store",
-    });
-    if (!res.ok) return null;
-    return res.json();
-  } catch (error) {
-    console.log("error", error);
-    return null;
-  }
+// The SDK's getCurrentUser() strips the profile down to identity fields, so the
+// full /users/me payload (bio, counts) is fetched directly.
+export async function fetchCurrentUser(accessToken: string): Promise<FanvueUser | null> {
+  const base = (process.env.API_BASE_URL ?? "https://api.fanvue.com").replace(/\/+$/, "");
+  const res = await fetch(`${base}/users/me`, {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      "X-Fanvue-API-Version": "2025-06-26",
+    },
+    cache: "no-store",
+  });
+  if (!res.ok) return null;
+  return res.json();
 }
