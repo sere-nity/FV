@@ -38,9 +38,9 @@ export default function DevAuthPage() {
       const { token } = await response.json();
 
       if (role === 'creator') {
-        window.location.href = `/creator?token=${token}`;
+        window.location.href = `/creator?token=${encodeURIComponent(token)}`;
       } else {
-        window.location.href = `/fan?token=${token}`;
+        window.location.href = `/fan?token=${encodeURIComponent(token)}`;
       }
     } catch (error) {
       console.error('Auth error:', error);

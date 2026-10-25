@@ -14,7 +14,10 @@ export interface ShelfUser {
 
 export function parseDevToken(token: string): ShelfUser | null {
   try {
-    const decoded = Buffer.from(token, 'base64').toString('utf-8');
+    // Use atob in browser, Buffer on server
+    const decoded = typeof window !== 'undefined'
+      ? atob(token)
+      : Buffer.from(token, 'base64').toString('utf-8');
     return JSON.parse(decoded);
   } catch {
     return null;
